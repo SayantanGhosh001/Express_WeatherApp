@@ -22,6 +22,7 @@ body{
     margin: 0;
 }
 .fa-snowflake{
+    color: #4cb5ff;
     transition: all linear;
     padding: 0.3rem;
     animation: snowflake 2s linear  infinite ;

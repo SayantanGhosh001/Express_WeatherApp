@@ -5,7 +5,7 @@ const hbs = require("hbs");
 const port = process.env.PORT || 7000;
 
 // public static path
-console.log(path.join(__dirname,"../public"))
+// console.log(path.join(__dirname,"../public"))
 const staticPath = path.join(__dirname, "../public");
 const templatePath = path.join(__dirname,"../templates/views")
 const partialsPath = path.join(__dirname, "../templates/partials");
