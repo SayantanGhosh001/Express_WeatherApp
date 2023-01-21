@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Piazzolla:opsz,wght@8..30,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Piazzolla', serif;
+}
+:root{
+    --main-bg:#1e272e;
+    --main-color: #0097e6;
+}
+html{
+    font-size : 62.5%;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    text-align: center;
+}
+.tempInformation{
+    width:40rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+   border-radius: 10px;
+   overflow: hidden;
+}
+@media (max-width:450px) {
+    .tempInformation{
+        width: 100%;
+    }
+}
+.top_layer{
+    display: flex;
+    flex-direction: row;
+   padding: 7px;
+    background-color: #394d5b;
+}
+.top_layer p{
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px 0 10px;
+}
+#day{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+#today_date{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+.main_layer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg);
+}
+.main_layer p{
+    color: #fff;
+}
+.middle_layer{
+    display: flex;
+   justify-content: center;
+   font-size: 50px;
+}
+.data_hide{
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+#temp{
+    margin: 0 30px;
+}
+#temp_val{
+    font-family:rale;
+}
+#city_temp{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 18px 0 0 18px;
+    color: #9b9fa2;
+}
+#cityName{
+    width:100%;
+    max-width: 600px;
+    height: auto;
+    background-color:rgb(26, 29, 37);
+    color: #fff;
+    padding: 8px 90px 8px 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+}
+#submitBtn{
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 20px;
+    padding: 6px 15px;
+    font-size: 16px;
+    color: #fff;
+    /* margin-left: -80px; */
+margin: 2px -81px;
+    position: absolute;
+}
+#submitBtn:hover{
+    color: var(--main-color);
+    background-color: #fff;
+}

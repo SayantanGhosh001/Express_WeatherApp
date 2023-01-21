@@ -1,0 +1,30 @@
+:root{
+    --main-bg:#1e272e;
+    --main-color: #0097e6;
+    --main-colorimg: rgba(73, 148, 169, 0.847);
+}
+.main_header_right img{
+ width: 100%;
+ max-width: 500px;
+ height: auto;
+ border-radius: 20%;
+ filter: contrast(100%);
+  box-shadow: 10px 10px 5px var(--main-color);
+      -moz-box-shadow: 10px 10px 5px var(--main-colorimg);
+      -webkit-box-shadow: 10px 10px 5px var(--main-colorimg);
+      -khtml-box-shadow: 10px 10px 5px var(--main-colorimg);
+}
+@media (max-width:768px) {
+    .main_header_left a{
+    margin-bottom: 25px;
+    }
+     .main_header_left p{
+    margin-top: 15px;
+    }
+}
+@media (max-width:400px) {
+    .main_header_right img{
+         max-width: 400px;
+    border-radius: 50%;
+    }
+}

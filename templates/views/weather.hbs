@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>HeaderLinks}}
+    <link rel="stylesheet" href="./css/weather.css">
+
+</head>
+
+<body>
+    {{>navbar}}
+
+    <div class="container-fluid main_header">
+        <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+            <div class="main_content">
+                <form action="" class="temperature">
+                    <input type="text" id="cityName" placeholder="Enter Your City Name" autocomplete="off">
+                    <input type="submit" value="Search" id="submitBtn">
+                </form>
+            </div>
+            <div class="tempInformation">
+                <div class="top_layer">
+                    <p id="day">Tuesday</p>
+                <p id="today_date">13 OCT</p>
+                </div>
+                <div class="main_layer">
+                    <p id="city_temp">Get Output Here</p>
+                    <div class="middle_layer data_hide">
+                        <p id="temp"><span id="temp_val">0</span><sup>o</sup>C</p>
+                        <p id="temp_status"><i class="fa-solid fa-cloud" style="color: rgb(0, 217, 255);"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     </div>
+
+    {{>footer}}
+<script src="js/main.js"></script>
+</body>
+
+</html>

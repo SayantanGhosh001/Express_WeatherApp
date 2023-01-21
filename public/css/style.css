@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Piazzolla:opsz,wght@8..30,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Piazzolla', serif;
+}
+:root{
+    --main-bg:#1e272e;
+    --main-color: #0097e6;
+}
+html{
+    font-size : 62.5%;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    margin: 0;
+}
+.fa-snowflake{
+    transition: all linear;
+    padding: 0.3rem;
+    animation: snowflake 2s linear  infinite ;
+}
+@keyframes snowflake{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+         transform: rotate(360deg);
+    }
+}
+.main_menu{
+    background-color: var(--main-bg) !important;
+    padding: 1rem 0 !important; 
+}
+.main_menu a{
+    color: #fff; 
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+   
+}
+.navbar-brand:hover{
+ color: #fff !important;
+}
+.nav-link{
+    padding:.5rem 1.5rem !important;
+
+}
+.nav-link:after {
+    display      : flex;
+    content      : '';
+    border-bottom: solid 2px var(--main-color);
+    transform    : scaleX(0);
+    transition   : transform 350ms ease-in-out;
+}
+.nav-link:hover:after {
+    transform: scaleX(1);
+}
+.nav-link:hover{
+    color: #fff !important;
+}
+.navbar{
+    color: #fff !important;
+}
+.navbar-toggler{
+    background-color: grey !important;
+}
+.main_header{
+    margin-top: 4rem;
+}
+.main_header_left{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.main_header_left p{
+font-size: 2.3rem;
+}
+.main_header_left h1{
+    font-size: 3rem;
+    margin: 1rem 0 3rem 0;
+}
+.text_clr{
+color:var(--main-color)
+}
+.main_header_left button{
+    border:none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+    outline: none;
+}
+.main_header_left button:hover{
+      box-shadow: 0 8px 6px -6px var(--main-color);
+}
+.bg_img{
+    width:100%;
+    max-width: 500px !important;
+    height: 350px !important;
+}
+.footer_main{
+    background-color: var(--main-bg);
+    margin-top: auto;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 1.3rem;
+}
+.footer_text{
+    color: #fff;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+
+}
+
+@media (max-width: 768px)  {
+    .main_header{
+        text-align: center;
+    }
+    .main_header_right{
+        margin-top: 15px !important;
+    }
+    
+}
