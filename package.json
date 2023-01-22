@@ -1,8 +1,8 @@
 {
-  "name": "express_web",
+  "name": "Express_WeatherApp",
   "version": "1.0.0",
-  "description": "Express app",
-  "main": "index.js",
+  "description": "Express app made by sayantan",
+  "main": "app.js",
   "engines": {
     "node": "14.x"
   },
