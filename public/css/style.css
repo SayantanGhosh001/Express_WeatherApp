@@ -68,9 +68,6 @@ body{
 .navbar{
     color: #fff !important;
 }
-.navbar-toggler{
-    background-color: grey !important;
-}
 .main_header{
     margin-top: 4rem;
 }
