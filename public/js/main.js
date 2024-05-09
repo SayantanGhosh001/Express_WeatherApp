@@ -50,6 +50,7 @@ const getInfo = async(event) => {
     let cityVal = cityName.value;
     if (cityVal === "") {
     city_temp.innerText = `Plz write the name before search`;
+    city_temp.style.color = "red";
     dataHide.classList.add(`data_hide`);
     }
     else {
@@ -90,6 +91,7 @@ const getInfo = async(event) => {
         }
         catch{
             city_temp.innerText = `Plz Enter The City Name Properly`;
+            city_temp.style.color = "red";
             dataHide.classList.add(`data_hide`);
         }
       
